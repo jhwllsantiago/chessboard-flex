@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard (Flex)</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <header>
+      <h1 id="chess-color" onclick="swap()">CHESSBOARD</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="corner"></div>
+        <div class="letters">
+          <span>a</span>
+          <span>b</span>
+          <span>c</span>
+          <span>d</span>
+          <span>e</span>
+          <span>f</span>
+          <span>g</span>
+          <span>h</span>
+        </div>
+        <div class="corner"></div>
+      </div>
+      <div class="container">
+        <section class="numbers">
+          <span>8</span>
+          <span>7</span>
+          <span>6</span>
+          <span>5</span>
+          <span>4</span>
+          <span>3</span>
+          <span>2</span>
+          <span>1</span>
+        </section>
+        <section class="board">
+          <div class="row">
+            <div class="white">
+              <span class="black-piece">&#9820;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9822;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9821;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9819;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9818;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9821;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9822;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9820;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="black">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="black">
+              <span class="black-piece">&#9823;</span>
+            </div>
+            <div class="white">
+              <span class="black-piece">&#9823;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+            <div class="black">
+              <span>&nbsp;</span>
+            </div>
+            <div class="white">
+              <span>&nbsp;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="white">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9817;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9817;</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="black">
+              <span class="white-piece">&#9814;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9816;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9815;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9813;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9812;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9815;</span>
+            </div>
+            <div class="black">
+              <span class="white-piece">&#9816;</span>
+            </div>
+            <div class="white">
+              <span class="white-piece">&#9814;</span>
+            </div>
+          </div>
+        </section>
+        <section class="numbers">
+          <span>8</span>
+          <span>7</span>
+          <span>6</span>
+          <span>5</span>
+          <span>4</span>
+          <span>3</span>
+          <span>2</span>
+          <span>1</span>
+        </section>
+      </div>
+      <div class="container">
+        <div class="corner"></div>
+        <div class="letters">
+          <span>a</span>
+          <span>b</span>
+          <span>c</span>
+          <span>d</span>
+          <span>e</span>
+          <span>f</span>
+          <span>g</span>
+          <span>h</span>
+        </div>
+        <div class="corner"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.65vmin;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body .background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/wood.jpg");
+}
+
+header {
+  width: 40vmin;
+  margin: 0 auto;
+}
+
+header > h1 {
+  font-size: 5vmin;
+  text-align: center;
+  margin-top: 2vmin;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  user-select: none;
+  border-radius: 2vmin;
+}
+
+header > h1:hover {
+  cursor: pointer;
+  background-color: #999999;
+}
+
+main {
+  background-color: #000000;
+  display: block;
+  margin: 4vmin auto;
+  margin-bottom: 2vmin;
+  max-width: fit-content;
+  border-radius: 1.1vmin;
+}
+
+.container,
+.row {
+  display: flex;
+}
+
+.board {
+  border: solid gray 0.55vmin;
+  border-radius: 0.55vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.corner {
+  width: 2.75vmin;
+}
+
+.letters {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  user-select: none;
+}
+
+.letters span {
+  width: 9.9vmin;
+  height: 2.2vmin;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.2vmin;
+  text-align: center;
+  user-select: none;
+}
+
+.letters span,
+.numbers span {
+  color: #ffffff;
+}
+
+.white,
+.black {
+  width: 9.9vmin;
+  height: 9.9vmin;
+  user-select: none;
+}
+
+.white {
+  background-color: #d9d9d9;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.black-piece,
+.white-piece {
+  z-index: 1;
+  display: block;
+  text-align: center;
+  font-size: 7vmin;
+  user-select: none;
+}
+
+.black-piece {
+  color: #404040;
+}
+
+.white-piece {
+  color: #ffffff;
+}
