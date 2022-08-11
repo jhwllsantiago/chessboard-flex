@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.65vmin;
+}
+
+body {
+  font-size: 3vmin;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -15,25 +18,25 @@ body .background {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.6;
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./assets/wood.jpg");
+  background-image: url("./assets/chess.jpg");
 }
 
 header {
-  width: 40vmin;
+  width: 35vmin;
   margin: 0 auto;
 }
 
 header > h1 {
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   text-align: center;
-  margin-top: 2vmin;
+  margin-top: 1vmin;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   user-select: none;
-  border-radius: 2vmin;
+  border-radius: 1.5vmin;
 }
 
 header > h1:hover {
@@ -44,10 +47,9 @@ header > h1:hover {
 main {
   background-color: #000000;
   display: block;
-  margin: 4vmin auto;
-  margin-bottom: 2vmin;
+  margin: 2vmin auto;
   max-width: fit-content;
-  border-radius: 1.1vmin;
+  border-radius: 1.5vmin;
 }
 
 .container,
@@ -56,14 +58,12 @@ main {
 }
 
 .board {
-  border: solid gray 0.55vmin;
-  border-radius: 0.55vmin;
   display: flex;
   flex-direction: column;
 }
 
 .corner {
-  width: 2.75vmin;
+  width: 4vmin;
 }
 
 .letters {
@@ -74,15 +74,15 @@ main {
 }
 
 .letters span {
-  width: 9.9vmin;
-  height: 2.2vmin;
+  width: 10vmin;
+  height: 4vmin;
 }
 
 .numbers {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2.2vmin;
+  width: 4vmin;
   text-align: center;
   user-select: none;
 }
@@ -90,34 +90,38 @@ main {
 .letters span,
 .numbers span {
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white,
 .black {
-  width: 9.9vmin;
-  height: 9.9vmin;
+  width: 10vmin;
+  height: 10vmin;
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .white {
-  background-color: #d9d9d9;
+  background-color: #bfbfbf;
 }
 
 .black {
-  background-color: #000000;
+  background-color: #404040;
 }
 
 .black-piece,
 .white-piece {
   z-index: 1;
-  display: block;
-  text-align: center;
   font-size: 7vmin;
   user-select: none;
 }
 
 .black-piece {
-  color: #404040;
+  color: #000000;
 }
 
 .white-piece {
